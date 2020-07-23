@@ -1,0 +1,67 @@
+#heading
+{
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(iso_img_background.jpg);
+  background-size:cover;
+	background-position:center;
+	color:#efefef!important;
+	background-attachment:fixed;
+	padding-top:100px;
+	padding-bottom:100px;
+  margin-left: -8px;
+  margin-right: -8px;
+
+}
+#heading h1
+{
+	text-align:center;
+	color:#efefef!important;
+  font-size: 70px;
+	padding-bottom:10px;
+}
+#heading h1:after
+{
+	content:'';
+	background:#efefef;
+	display:block;
+	height:3px;
+	width:250px;
+	margin:20px auto 5px;
+}
+.heading
+{
+	margin-top:40px;
+}
+
+
+/*   generalinfo   */
+
+#generalinfo h1
+{
+  text-align:center;
+  color:#007bff!important;
+  font-size: 70px;
+
+}
+#generalinfo img{
+
+  margin:20px auto;
+  padding:20px;
+  height:250px;
+  width:250px;
+
+
+}
+#generalinfo p
+{
+	font-size:14px;
+	margin-top:20px;
+}
+
+
+#showMap
+{
+padding-top:60px;
+background: white;
+margin-top:60px;
+padding-bottom:40px;
+}

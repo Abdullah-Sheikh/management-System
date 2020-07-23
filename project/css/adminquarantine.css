@@ -1,0 +1,51 @@
+/*   Quarantine section  Starts*/
+
+
+#admin_quarantine
+{
+padding-top:20px;
+margin-top:20px;
+padding-bottom:20px;
+}
+#admin_quarantine .border_box3
+{
+box-shadow: 3px 3px 3px 3px #888888;
+background-image: url(adminsectionimg.png);
+background-repeat:no-repeat;
+border-radius:0.5%;
+ margin-top:10px;
+ padding:5px;
+ margin:5px;
+}
+#admin_quarantine .quarantineH1
+{
+ margin-top:5px;
+ margin-bottom:5px;
+}
+#admin_quarantine .quarantineHCard
+{
+ background:#007bff;
+ color:#fff;
+  margin:8px;
+  padding:8px;
+}
+#admin_quarantine .col-md-4
+{
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+
+#admin_quarantine h4
+{
+
+	text-align: center;
+	font-size: 25px;
+
+}
+#admin_quarantine p
+{
+  text-align: center;
+
+}
+
+/* !!!!                  quarantine Section Ends               */

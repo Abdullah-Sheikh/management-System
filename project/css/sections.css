@@ -1,0 +1,72 @@
+*{
+	padding=0;
+	margin=0;
+
+}
+
+
+/*   Isolation section  Starts*/
+
+
+#admin_isolation
+{
+padding-top:20px;
+margin-top:20px;
+padding-bottom:20px;
+}
+#admin_isolation .border_box2
+{
+box-shadow: 3px 3px 3px 3px #888888;
+background-image: url(adminsectionimg.png);
+background-repeat:no-repeat;
+border-radius:0.5%;
+ margin-top:10px;
+ padding:5px;
+ margin:5px;
+}
+#admin_isolation .isolationH1
+{
+ margin-top:5px;
+ margin-bottom:5px;
+}
+#admin_isolation .isolationHCard
+{
+ background:#007bff;
+ color:#fff;
+  margin:8px;
+  padding:8px;
+}
+#admin_isolation .col-md-4
+{
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+
+#admin_isolation h4
+{
+
+	text-align: center;
+	font-size: 25px;
+
+}
+#admin_isolation p
+{
+  text-align: center;
+
+}
+
+/* !!!!                  Isolation Section Ends               */
+
+
+
+.card_Design
+{
+  border:10px solid #fff;
+    border-radius: 30px;
+    margin-top:10px;
+    padding:20px;
+    margin:20px;
+    background-color:#fff;
+}
+
+/*   Isolation section  ENDS  */

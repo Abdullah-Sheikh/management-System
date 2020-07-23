@@ -1,0 +1,31 @@
+#login
+{
+	background-image: url(login_background_img.jpg);
+  background-size:cover;
+	background-position:center;
+	color:#efefef!important;
+	background-attachment:fixed;
+	padding-top:100px;
+	padding-bottom:100px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.anim{
+
+  margin:20px auto;
+  padding:20px;
+  height:300px;
+  width:500px;
+
+
+}
+
+
+/*--------------------Footer------*/
+#footer
+{
+	background:#202124;
+	color:#fff;
+	padding:10px;
+}

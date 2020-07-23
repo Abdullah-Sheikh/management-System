@@ -1,0 +1,179 @@
+#heading
+{
+	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(covid.jpg);
+  background-size:cover;
+	background-position:center;
+	color:#efefef!important;
+	background-attachment:fixed;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+#heading h1
+{
+	text-align:center;
+	color:#222A32!important;
+  font-size: 70px;
+  margin-top: 250px;
+  font-weight: bold;
+	padding-bottom:10px;
+}
+#heading h1:after
+{
+	content:'';
+	background:black;
+	display:block;
+	height:3px;
+	width:250px;
+	margin:20px auto 5px;
+}
+  #heading p
+  {
+  	text-align:center;
+  	color:grey!important;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+
+  }
+
+
+
+#symptoms
+{
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(symptoms.jpg);
+  background-size:cover;
+	background-position:center;
+	color:#efefef!important;
+	background-attachment:fixed;
+	padding-top:80px;
+	padding-bottom:80px;
+
+
+}
+#symptoms h1
+{
+	text-align:center;
+	color:#efefef!important;
+  font-size: 50px;
+	padding-bottom:30px;
+}
+#symptoms h1:after
+{
+	content:'';
+	background:#efefef;
+	display:block;
+	height:3px;
+	width:250px;
+	margin:20px auto 5px;
+}
+#symptoms p
+{
+
+	color:#efefef!important;
+  font-size: 20px;
+	padding-bottom:30px;
+}
+#prevention
+{
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(iso_img_background.jpg);
+  background-size:cover;
+	background-position:center;
+	color:#efefef!important;
+	background-attachment:fixed;
+	padding-top:50px;
+	padding-bottom:50px;
+
+
+}
+#prevention h1
+{
+	text-align:center;
+	color:#efefef!important;
+  font-size: 50px;
+	padding-bottom:10px;
+}
+#prevention h1:after
+{
+	content:'';
+	background:#efefef;
+	display:block;
+	height:3px;
+	width:250px;
+	margin:20px auto 5px;
+}
+#prevention p
+{
+
+	color:#efefef!important;
+  font-size: 20px;
+	padding-bottom:30px;
+}
+
+#treatment
+{
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(covid.jpg);
+  background-size:cover;
+	background-position:center;
+	color:#efefef!important;
+	background-attachment:fixed;
+	padding-top:80px;
+	padding-bottom:80px;
+
+
+}
+#treatment h1
+{
+	text-align:center;
+	color:#efefef!important;
+  font-size: 50px;
+	padding-bottom:30px;
+}
+#treatment h1:after
+{
+	content:'';
+	background:#efefef;
+	display:block;
+	height:3px;
+	width:250px;
+	margin:20px auto 5px;
+}
+#treatment p
+{
+	color:#efefef!important;
+  font-size: 20px;
+	padding-bottom:30px;
+}
+#plasma
+{
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(denoteplasma.jpg);
+  background-size:cover;
+	background-position:center;
+	color:#efefef!important;
+	background-attachment:fixed;
+	padding-top:80px;
+	padding-bottom:80px;
+
+
+}
+#plasma h1
+{
+	text-align:center;
+	color:#efefef!important;
+  font-size: 50px;
+	padding-bottom:30px;
+}
+#plasma h1:after
+{
+	content:'';
+	background:#efefef;
+	display:block;
+	height:3px;
+	width:250px;
+	margin:20px auto 5px;
+}
+#plasma p
+{
+	color:#efefef!important;
+  font-size: 20px;
+	padding-bottom:30px;
+}

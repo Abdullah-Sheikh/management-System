@@ -1,0 +1,52 @@
+*{
+	padding=0;
+	margin=0;
+
+}
+
+
+#admin_overview
+{
+padding-top:60px;
+background: white;
+margin-top:60px;
+padding-bottom:40px;
+}
+#admin_overview .border_box
+{
+box-shadow: 3px 3px 3px 3px #888888;
+border-radius:0.5%;
+ margin-top:10px;
+ padding:5px;
+ margin:5px;
+}
+#admin_overview .overviewH1
+{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+#admin_overview .overviewHCard
+{
+
+	color:#fff;
+	 margin:8px;
+	 padding:8px;
+}
+
+#admin_overview .col-md-4
+{
+	margin-top:30px;
+	margin-bottom: 40px;
+}
+
+
+
+.vl {
+  border-left: 6px solid green;
+  height: 100px;
+  position: absolute;
+	align:left;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}

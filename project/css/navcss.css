@@ -1,0 +1,31 @@
+*
+{
+	padding=0;
+	margin=0;
+
+}
+
+
+/*----------------------------------Navigation----------*/
+#nav-bar
+{
+	position:sticky;
+	top:0;
+	z-index:22;
+}
+
+.navbar-brand img
+{
+	height:70px;
+	padding-left:30px;
+	margin-right:10px;
+}
+.navbar-nav li
+{
+	padding:0 10px;
+}
+.navbar-nav li a
+{
+	float:right;
+	text-align:left;
+}

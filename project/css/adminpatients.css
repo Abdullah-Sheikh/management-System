@@ -1,0 +1,64 @@
+/*   Admin Patients         */
+
+#admin_patients
+{
+padding-top:20px;
+margin-top:20px;
+padding-bottom:20px;
+}
+#admin_patients .border_box1
+{
+	background-image: url(adminsectionimg.png);
+	background-repeat:no-repeat;
+box-shadow: 3px 3px 3px 3px #888888;
+border-radius:0.5%;
+ margin-top:10px;
+ padding:5px;
+ margin:5px;
+}
+#admin_patients .patientsH1
+{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+#admin_patients .patientsHCard
+{
+
+	color:#fff;
+	 margin:8px;
+	 padding:8px;
+}
+#admin_patients .col-md-4
+{
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+#admin_patients .col-md-6
+{
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+#admin_patients h4
+{
+  margin-bottom: 30px;
+  margin-left:20px;
+}
+#admin_patients p
+{
+  margin-left:20px;
+}
+
+.Analytics
+{
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+.cardDesign
+{
+  margin:10px;
+  padding:10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+}
