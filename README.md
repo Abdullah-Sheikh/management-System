@@ -20,6 +20,9 @@ https://user-images.githubusercontent.com/62107887/118883408-a2fb7000-b90e-11eb-
 ## Description :
 
    This is web Application which is build in php and Mysql Database. Languages used in this apllication are: html, CSS, Javascript, Php and SQL.
+   You can also view the site at : https://abdullah-sheikh.github.io/management-System/#top
+   
+   ##### Note: 👆 the above link not provide actual site beacuse the database is not connected and it is hosted on Github pages.
 ## User:
       It can see the isolation and quarantine wards in the Country and we provide two interface :
    
