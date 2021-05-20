@@ -19,7 +19,7 @@ https://user-images.githubusercontent.com/62107887/118883408-a2fb7000-b90e-11eb-
 
 ## Description :
 
-Covid - 19 (Corona Virus Disease) is a pandamic that has cause many lives to keep record we have made a covid management system that hospitals can use to manage in a better organized way with login id and password, The records are saved in database (php & ms sql) but everyone can see required precautions and information all at one point. 
+COVID - 19 (Corona Virus Disease) is a pandamic that has cause many lives to keep record we have made a covid management system that hospitals can use admin portal to manage in they need to have login id and password. The records are saved in database (php & ms sql). Everyone in public can see required precautions and information for COVID 19 all at one point. 
 
    This is Web Application which is build in php and Mysql Database. Languages used in this apllication are: html, CSS, Javascript, Php and SQL. Group members are:
  1.  https://github.com/Abdullah-Sheikh 
@@ -66,6 +66,8 @@ Stuck with some problem? Need help in solution email me : <b>f180243@nu.edu.pk</
 ## 👨‍💻 Technical Skills & Expertise
 - Google IT Support Specialist.
 - Development of  Mobile Applications (Android and Flutter).
+- Web Developer (HTML,CSS,JS,Bootstrap,Angular)
+- Wordpress Developer
 - Cloud Computing, Angular Development and Firebase 🔥.
 
 <hr>
