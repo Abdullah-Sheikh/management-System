@@ -19,7 +19,9 @@ https://user-images.githubusercontent.com/62107887/118883408-a2fb7000-b90e-11eb-
 
 ## Description :
 
-   This is web Application which is build in php and Mysql Database. Languages used in this apllication are: html, CSS, Javascript, Php and SQL. Group members are:
+Covid - 19 (Corona Virus Disease) is a pandamic that has cause many lives to keep record we have made a covid management system that hospitals can use to manage in a better organized way with login id and password, The records are saved in database (php & ms sql) but everyone can see required precautions and information all at one point. 
+
+   This is Web Application which is build in php and Mysql Database. Languages used in this apllication are: html, CSS, Javascript, Php and SQL. Group members are:
  1.  https://github.com/Abdullah-Sheikh 
  2.  https://github.com/Zyyffi 
  3. https://github.com/AssadRamish
