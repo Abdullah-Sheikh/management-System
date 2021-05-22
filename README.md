@@ -25,7 +25,6 @@ Everyone in public can see required precautions and information for COVID 19 all
    This is Web Application which is build in php and Mysql Database. Languages used in this apllication are: html, CSS, Javascript, Php and SQL. Group members are:
  1.  https://github.com/Abdullah-Sheikh 
  2.  https://github.com/Zyyffi 
- 3. https://github.com/AssadRamish
  
    You can also view the site at : https://abdullah-sheikh.github.io/management-System/#top
    
