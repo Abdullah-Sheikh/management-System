@@ -1,0 +1,351 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.0.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Jul 08, 2020 at 12:38 PM
+-- Server version: 10.3.16-MariaDB
+-- PHP Version: 7.3.6
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `Covid_19_dbms`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `country`
+--
+
+CREATE TABLE `country` (
+  `c_id` int(20) NOT NULL,
+  `c_name` varchar(128) NOT NULL,
+  `cases` varchar(128) NOT NULL,
+  `deaths` varchar(128) NOT NULL,
+  `recovered` varchar(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `country`
+--
+
+INSERT INTO `country` (`c_id`, `c_name`, `cases`, `deaths`, `recovered`) VALUES
+(1, 'Pakistan', '206,508', '95,407', '4,167');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `doctors`
+--
+
+CREATE TABLE `doctors` (
+  `doctor_id` varchar(10) NOT NULL,
+  `doctor_name` varchar(20) NOT NULL,
+  `doctor_age` int(3) NOT NULL,
+  `doctor_phone` varchar(14) NOT NULL,
+  `doctor_email` varchar(20) NOT NULL,
+  `doctor_city` varchar(20) NOT NULL,
+  `doctor_province` varchar(20) NOT NULL,
+  `doctor_status` varchar(20) NOT NULL,
+  `isolation_ward_id` varchar(15) DEFAULT 'NULL',
+  `quarantine_ward_id` varchar(15) DEFAULT 'NULL'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `doctors`
+--
+
+INSERT INTO `doctors` (`doctor_id`, `doctor_name`, `doctor_age`, `doctor_phone`, `doctor_email`, `doctor_city`, `doctor_province`, `doctor_status`, `isolation_ward_id`, `quarantine_ward_id`) VALUES
+('2', 'Nazeer Bloch', 66, '03157141715', 'nazir@bloch.com', 'Quetta', 'Blochistan', 'Isolate', 'PK-I-2322', '0'),
+('3', 'Haris Hafeez', 74, '2325465453', 'hulk@marvel.com', 'FSD', 'KPK', 'Qurantine', '0', 'PK-Q-4322');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `doctors_tb`
+--
+
+CREATE TABLE `doctors_tb` (
+  `doctor_name` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `isolation_ward`
+--
+
+CREATE TABLE `isolation_ward` (
+  `isolation_ward_id` varchar(15) NOT NULL,
+  `isolation_ward_name` varchar(20) NOT NULL,
+  `capacity` int(3) NOT NULL,
+  `city` varchar(20) NOT NULL,
+  `province` varchar(20) NOT NULL,
+  `lat` float DEFAULT NULL,
+  `lng` float DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `isolation_ward`
+--
+
+INSERT INTO `isolation_ward` (`isolation_ward_id`, `isolation_ward_name`, `capacity`, `city`, `province`, `lat`, `lng`) VALUES
+('PK-I-2321', 'DHQ-Peshawar', 120, 'Peshawar', 'KPK', 34.0259, 71.5601),
+('PK-I-2322', 'Mayo-Hospital', 300, 'Lahore', 'Punjab', 31.582, 74.3294),
+('PK-I-2378', 'Nishter Hospital', 80, 'Multan', 'Punjab', 30.1575, 71.5249);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `login_tb`
+--
+
+CREATE TABLE `login_tb` (
+  `email_id` varchar(20) NOT NULL,
+  `password` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `login_tb`
+--
+
+INSERT INTO `login_tb` (`email_id`, `password`) VALUES
+('admin', 'admin');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `log_patients`
+--
+
+CREATE TABLE `log_patients` (
+  `id` int(6) NOT NULL,
+  `patient_id` varchar(15) NOT NULL,
+  `patient_name` varchar(20) NOT NULL,
+  `action` varchar(20) NOT NULL,
+  `date` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `log_patients`
+--
+
+INSERT INTO `log_patients` (`id`, `patient_id`, `patient_name`, `action`, `date`) VALUES
+(1, '35342', 'Dummy5', 'Deleted', '2020-06-17 23:38:03'),
+(2, '100234', 'Ali Sheikh', 'Inserted', '2020-07-07 21:19:20'),
+(3, '100087', 'Ahmed', 'Updated', '2020-07-07 21:30:49'),
+(4, '01', 'Tahir shah', 'Inserted', '2020-07-08 05:47:28'),
+(5, '02', 'Sham Idrees', 'Inserted', '2020-07-08 05:49:10'),
+(6, '03', 'Muzammil', 'Inserted', '2020-07-08 05:50:13'),
+(7, '04', 'Asad', 'Inserted', '2020-07-08 05:51:36'),
+(8, '05', 'Nevada', 'Inserted', '2020-07-08 05:53:05'),
+(9, '06', 'Aleem', 'Inserted', '2020-07-08 05:53:51'),
+(10, '07', 'Faizan', 'Inserted', '2020-07-08 05:54:51'),
+(11, '08', 'Naveed', 'Inserted', '2020-07-08 05:56:46'),
+(12, '09', 'Baig', 'Inserted', '2020-07-08 05:57:52'),
+(13, '10', 'Alamgeer', 'Inserted', '2020-07-08 05:59:07'),
+(14, '09', 'Baig', 'Updated', '2020-07-08 08:44:19'),
+(15, 'abc', 'Ahmed', 'Inserted', '2020-07-08 10:30:25'),
+(16, '100011', 'Dummy1', 'Deleted', '2020-07-08 10:34:13');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `patients`
+--
+
+CREATE TABLE `patients` (
+  `patient_id` varchar(10) NOT NULL,
+  `patient_name` varchar(20) NOT NULL,
+  `patient_age` int(3) NOT NULL,
+  `patient_phone` varchar(14) NOT NULL,
+  `patient_email` varchar(20) NOT NULL,
+  `patient_city` varchar(20) NOT NULL,
+  `patient_province` varchar(20) NOT NULL,
+  `patient_status` varchar(20) NOT NULL,
+  `isolation_ward_id` varchar(15) NOT NULL,
+  `quarantine_ward_id` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `patients`
+--
+
+INSERT INTO `patients` (`patient_id`, `patient_name`, `patient_age`, `patient_phone`, `patient_email`, `patient_city`, `patient_province`, `patient_status`, `isolation_ward_id`, `quarantine_ward_id`) VALUES
+('01', 'Tahir shah', 34, '0424112233', 'xyz@gmail.com', 'karachi', 'sindh', 'Isolate', '01', '01'),
+('02', 'Sham Idrees', 35, '08144998877', 'cde@gmail.com', 'lahore', 'punjab', 'Isolate', '02', '02'),
+('03', 'Muzammil', 21, '061885447', 'mua@yahoo.com', 'rawalpindi', 'Islamabad', 'Death', '03', '03'),
+('04', 'Asad', 22, '0611245792', 'asad@hotmail.com', 'MUltan', 'Punjab', 'Death', '04', '04'),
+('05', 'Nevada', 54, '051789456', 'nev@bing.com', 'Quetta', 'Balochistan', 'Recovered', '05', '05'),
+('06', 'Aleem', 49, '03111245789', 'aleem12@gmail.com', 'Hyderabad', 'Sindh', 'Qurantine', '06', '06'),
+('07', 'Faizan', 25, '048465231', 'faizi@yahoo.com', 'Kohat', 'Gilgit Baltistan', 'Death', '07', '07'),
+('08', 'Naveed', 68, '09278945632', 'nvd@gmail.com', 'Keil', 'Khyber pakhtunkhwa', 'Death', '08', '08'),
+('09', 'Baig', 25, '09245698732', 'B@gmail.com', 'Murreeaa', 'Punjab', 'Isolate', '09', '09'),
+('10', 'Alamgeer', 87, 'Null', 'Null', 'Lahore', 'Punjab', 'Death', '10', '10'),
+('100013', 'Ali', 35, '023346213341', 'abc123@gmail.com', 'Lahore', 'Punjab', 'Qurantine', '', 'PK-Q-0321'),
+('100014', 'Hassan', 29, '03158843253', 'hassan123@gmail.com', 'Peshawar', 'KPK', 'Isolate', 'PK-I-2321', ''),
+('100019', 'Bilal', 41, '05212353412', 'bilal786@mail.com', 'Multan', 'Punjab', 'Isolate', 'PK-I-2378', ''),
+('100025', 'Hamza', 53, '024231222431', 'hamza343@gmail.com', 'Gujramwala', 'Punjab', 'Qurantine', '', 'PK-Q-03455'),
+('100045', 'Rohan', 23, '0342445231242', 'rohan3242@gmail.com', 'Lahore', 'Punjab', 'Recovered', '', ''),
+('100087', 'Ahmed', 71, '024313124232', 'ahmed3523@gmail.com', 'Gwadar', 'Balcohistan', 'Isolate', '', 'PK-Q-03958'),
+('100095', 'Dummy2', 54, '023423393124', 'dummy2@gmail.com', 'Karachi', 'Sindh', 'Death', '', ''),
+('100234', 'Ali Sheikh', 52, '0232 31242412', 'ali32352@gmail.com', 'Lahore', 'Punjab', 'Isolate', 'PK-I-2322', ''),
+('abc', 'Ahmed', 52, '23423123123', 'abc@g', 'lahore', 'punjab', 'Isolate', 'PK-I-2322', '0');
+
+--
+-- Triggers `patients`
+--
+DELIMITER $$
+CREATE TRIGGER `del_log` BEFORE DELETE ON `patients` FOR EACH ROW INSERT INTO log_patients values(null,OLD.patient_id,OLD.patient_name,"Deleted",NOW())
+$$
+DELIMITER ;
+DELIMITER $$
+CREATE TRIGGER `insert_log` BEFORE INSERT ON `patients` FOR EACH ROW INSERT INTO log_patients values(null,NEW.patient_id,NEW.patient_name,"Inserted",NOW())
+$$
+DELIMITER ;
+DELIMITER $$
+CREATE TRIGGER `update_log` BEFORE UPDATE ON `patients` FOR EACH ROW INSERT INTO log_patients values(null,OLD.patient_id,OLD.patient_name,"Updated",NOW())
+$$
+DELIMITER ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `province`
+--
+
+CREATE TABLE `province` (
+  `p_id` int(6) NOT NULL,
+  `p_name` varchar(128) NOT NULL,
+  `p_cases` varchar(128) NOT NULL,
+  `p_country` varchar(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `province`
+--
+
+INSERT INTO `province` (`p_id`, `p_name`, `p_cases`, `p_country`) VALUES
+(1, 'Punjab', '74,778', 'pakistan'),
+(2, 'sindh', '80,446', 'pakistan'),
+(3, 'Balochistan', '10376', 'pakistan'),
+(4, 'Kpk', '25778', 'pakistan'),
+(5, 'Islamabad', '12,643', 'pakistan'),
+(6, 'Ajk', '1,049', 'pakistan');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `quarantine_ward`
+--
+
+CREATE TABLE `quarantine_ward` (
+  `quarantine_ward_id` varchar(15) NOT NULL,
+  `quarantine_ward_name` varchar(20) NOT NULL,
+  `capacity` int(3) NOT NULL,
+  `city` varchar(20) NOT NULL,
+  `province` varchar(20) NOT NULL,
+  `phn_num` varchar(16) NOT NULL,
+  `head_name` varchar(20) NOT NULL,
+  `lat` float NOT NULL,
+  `lng` float NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `quarantine_ward`
+--
+
+INSERT INTO `quarantine_ward` (`quarantine_ward_id`, `quarantine_ward_name`, `capacity`, `city`, `province`, `phn_num`, `head_name`, `lat`, `lng`) VALUES
+('PK-Q-03455', 'Field Hospital GRW', 180, 'Gujranwala', 'Punjab', '016-111-213', 'DCO Sohail Ashraf', 32.1664, 74.1959),
+('PK-Q-4321', 'Field Hospital', 500, 'Karachi', 'Sindh', '0123-21221442', 'Dr Abdul Subhan', 24.861, 66.9905);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `country`
+--
+ALTER TABLE `country`
+  ADD PRIMARY KEY (`c_id`);
+
+--
+-- Indexes for table `doctors`
+--
+ALTER TABLE `doctors`
+  ADD PRIMARY KEY (`doctor_id`),
+  ADD UNIQUE KEY `patient_email` (`doctor_email`);
+
+--
+-- Indexes for table `isolation_ward`
+--
+ALTER TABLE `isolation_ward`
+  ADD PRIMARY KEY (`isolation_ward_id`);
+
+--
+-- Indexes for table `login_tb`
+--
+ALTER TABLE `login_tb`
+  ADD PRIMARY KEY (`email_id`);
+
+--
+-- Indexes for table `log_patients`
+--
+ALTER TABLE `log_patients`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `patients`
+--
+ALTER TABLE `patients`
+  ADD PRIMARY KEY (`patient_id`);
+
+--
+-- Indexes for table `province`
+--
+ALTER TABLE `province`
+  ADD PRIMARY KEY (`p_id`);
+
+--
+-- Indexes for table `quarantine_ward`
+--
+ALTER TABLE `quarantine_ward`
+  ADD PRIMARY KEY (`quarantine_ward_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `country`
+--
+ALTER TABLE `country`
+  MODIFY `c_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `log_patients`
+--
+ALTER TABLE `log_patients`
+  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
+-- AUTO_INCREMENT for table `province`
+--
+ALTER TABLE `province`
+  MODIFY `p_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
