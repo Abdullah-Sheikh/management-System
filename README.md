@@ -61,6 +61,9 @@ Everyone in public can see required precautions and information for COVID 19 all
          In Quarantine  Ward section the Admin can see, update isolation ward status, delete the ward.
 	 
 	 
+## Add Database file:
+         import the database file (covid-19_dbms) in mysql.
+	 
  ## 🤝 Consulting / Coaching
 Stuck with some problem? Need help in solution email me : <b>f180243@nu.edu.pk</b>
 
